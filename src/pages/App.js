@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Header, Footer } from '../components/views/index';
-import Routes from '../_website/layout/routes.js';
+import Routes from '../_website/layout/routes';
 
 class App extends Component {
     render() {
