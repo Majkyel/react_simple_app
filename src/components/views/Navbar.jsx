@@ -1,0 +1,32 @@
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FontColors } from '../../_website/layout/colors';
+
+const Navigation = styled.ul`
+  display: flex;
+`
+
+const NavElement = styled.li`
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+`
+
+const NavLink = styled(Link)`
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: ${ FontColors.LIGHT };
+`
+
+const Navbar = ()=> {
+  return (
+    <Navigation>
+        <NavElement><NavLink to="/">Home</NavLink></NavElement>
+        <NavElement><NavLink to="/energy">Energy</NavLink></NavElement>
+        <NavElement><NavLink to="/characters">Characters</NavLink></NavElement>
+    </Navigation>
+  )
+}
+
+export { Navbar }
