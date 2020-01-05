@@ -14,7 +14,23 @@ module.exports = {
             use: {
                 loader: 'babel-loader'
             }
-        }]
+        },
+        {
+          test: /\.scss$/,
+          use: ['style-loader', 'css-loader', 'sass-loader']
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 5000
+              }
+            }
+          ]
+        }
+      ]
     },
     plugins: [
         new HtmlWebpackPlugin({
