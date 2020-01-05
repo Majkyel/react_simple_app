@@ -7,6 +7,11 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,10 +24,13 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.1.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
