@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Button } from '../../components/views/index';
+import { Container } from '../../components/views/index';
 import { FontColors } from '../../_website/layout/colors';
 
 const JumbotronWrapper = styled.div`
@@ -32,7 +32,7 @@ const JumbotronText = styled.p`
   color: ${ FontColors.LIGHT };
   text-transform: uppercase;
   letter-spacing: 1px;
-`
+`;
 
 const Jumbotron = ({backgroundImage, backgroundPosition, boxShadow, className})=>{
   return (
