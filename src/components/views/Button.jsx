@@ -14,9 +14,10 @@ const ButtonElement = styled.button`
   border: none;
   outline: none;
   letter-spacing: 1px;
-  border-radius: 15px;
+  border-radius: 13px;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
   background-color: ${props => props.backgroundColor ? props.backgroundColor : ButtonColors.ENTER};
 `;
 
