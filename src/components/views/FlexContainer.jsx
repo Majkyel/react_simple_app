@@ -9,9 +9,9 @@ const FContainer = styled.div`
   margin: auto;
 `;
 
-const FlexContainer = ({children})=> {
+const FlexContainer = ({children, className})=> {
   return (
-    <FContainer>
+    <FContainer className={className} >
       {children}
     </FContainer>
   )

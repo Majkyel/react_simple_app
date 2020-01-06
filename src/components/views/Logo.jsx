@@ -12,9 +12,9 @@ const LogoImage = styled.img`
   display: block;
 `
 
-const Logo = ({src})=> {
+const Logo = ({src, className})=> {
   return (
-    <LogoWrapper>
+    <LogoWrapper className={className} >
       <LogoImage src={src} alt="logo" />
     </LogoWrapper>
   )
