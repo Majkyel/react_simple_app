@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from '../../components/views/index';
+import { Container } from '../components/views/index';
 
 class Characters extends Component {
   render() {

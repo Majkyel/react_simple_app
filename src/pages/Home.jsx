@@ -1,7 +1,7 @@
 import React from 'react';
-import { Jumbotron } from '../../components/views/index';
+import { Jumbotron } from './views/Jumbotron.jsx';
 import styled from 'styled-components';
-import JumbotronBackground from '../../_website/images/jumbotron.jpg';
+import JumbotronBackground from '../_website/images/jumbotron.jpg';
 
 const HomeWrapper = styled.section`
   height: calc(100vh - 100px);

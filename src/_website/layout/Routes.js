@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Home, Energy, Characters } from '../../pages/views/index';
+import { Home, Energy, Characters } from '../../pages/index';
 
 const Routes = ()=> {
   return(
