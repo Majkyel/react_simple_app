@@ -7,9 +7,9 @@ const MainContainer = styled.div`
   margin: auto;
 `;
 
-const Container = ({children})=> {
+const Container = ({children, className})=> {
   return (
-    <MainContainer>
+    <MainContainer className={className}>
       {children}
     </MainContainer>
   )

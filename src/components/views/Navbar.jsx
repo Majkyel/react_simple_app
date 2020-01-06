@@ -19,9 +19,9 @@ const NavLink = styled(Link)`
   color: ${ FontColors.LIGHT };
 `
 
-const Navbar = ()=> {
+const Navbar = ({className})=> {
   return (
-    <Navigation>
+    <Navigation className={className}>
         <NavElement><NavLink to="/">Home</NavLink></NavElement>
         <NavElement><NavLink to="/energy">Energy</NavLink></NavElement>
         <NavElement><NavLink to="/characters">Characters</NavLink></NavElement>
