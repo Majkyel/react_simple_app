@@ -1,15 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FlexContainer, Button, SectionWrapper } from '../../components/views/index';
+import { FlexContainer, Button, SectionWrapper, ContentWrapper } from '../../components/views/index';
 import Falcon from '../../_website/images/firstSFalcon.jpg';
 import { Link } from 'react-router-dom';
-
-const TextLeftSide = styled.div`
-  max-width: 50%;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-`;
+import text from '../../_website/texts/texts.json';
 
 const ContentContainer = styled.div`
   position: relative;
@@ -25,38 +19,36 @@ const Text = styled.p`
   font-style: italic;
 `;
 
-const BackgroundRightSide = styled.div`
-  max-width: 50%;
-  background: url(${Falcon});
-  width: 100%;
-  display: block;
-  min-height: 400px;
-  background-size: cover;
-  background-position: right;
-  box-shadow: inset 0px 0px 20px 29px black;
-`;
-
 const FirstSectionFlexContainer = styled(FlexContainer)`
   border-top: 1px solid yellow;
   border-bottom: 1px solid yellow;
 `
 
-const HomeSectionFirst = ({ className })=> {
+const HomeEnergySection = ({ className })=> {
   return (
     <SectionWrapper className={className}>
       <FirstSectionFlexContainer>
-        <TextLeftSide>
+        <ContentWrapper
+          maxWidth="50%"
+          padding="20px"
+          contentAlign="center"
+          >
           <ContentContainer>
-            <Text>Here you can check the current power level generated for our ships and Jedi light swords.</Text>
+            <Text>{text.ENERGY_SECTION_TEXT}</Text>
             <Link to='/energy'>
               <Button position="center">ENERGY</Button>
             </Link>
           </ContentContainer>
-        </TextLeftSide>
-        <BackgroundRightSide />
+        </ContentWrapper>
+        <ContentWrapper
+          maxWidth="50%"
+          backgroundIMG={Falcon}
+          backgroundPOS="right"
+          boxShadow="inset 0px 0px 20px 29px black"
+        />
       </FirstSectionFlexContainer>
     </SectionWrapper>
   )
 }
 
-export { HomeSectionFirst }
+export { HomeEnergySection }
