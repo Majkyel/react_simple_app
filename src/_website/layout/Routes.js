@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Home, Energy, Characters } from '../../pages/index';
+import { Home, Power, Characters } from '../../pages/index';
 
 const Routes = ()=> {
   return(
     <>
       <Route exact path="/" component={Home} />
-      <Route path="/energy" component={Energy} />
+      <Route path="/power" component={Power} />
       <Route path="/characters" component={Characters} />
     </>
   )

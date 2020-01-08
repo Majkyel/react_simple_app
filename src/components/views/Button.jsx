@@ -11,9 +11,10 @@ const ButtonWrapper = styled.div`
 const ButtonElement = styled.button`
   padding: .8rem 1.5rem;
   color: white;
-  border: none;
+  border: ${props=> props.border? props.border : 'none' };
   outline: none;
   letter-spacing: 1px;
+  text-shadow: 0px 0px 2px black;
   border-radius: 13px;
   font-size: 1rem;
   font-weight: 600;
@@ -21,10 +22,10 @@ const ButtonElement = styled.button`
   background-color: ${props => props.backgroundColor ? props.backgroundColor : ButtonColors.ENTER};
 `;
 
-const Button = ({children, bgColor, position, className})=> {
+const Button = ({children, bgColor, position, className, border})=> {
   return (
     <ButtonWrapper position={position}>
-      <ButtonElement backgroundColor={bgColor} className={className} >
+      <ButtonElement backgroundColor={bgColor} className={className} border={border} >
         {children}
       </ButtonElement>
     </ButtonWrapper>
