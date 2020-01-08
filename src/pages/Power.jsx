@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const EnergyWrapper = styled.section``
 
-class Energy extends Component {
+class Power extends Component {
   render() {
     return (
       <EnergyWrapper>
@@ -16,4 +16,4 @@ class Energy extends Component {
   }
 };
 
-export { Energy };
+export { Power };

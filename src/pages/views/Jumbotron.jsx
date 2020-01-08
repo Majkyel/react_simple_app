@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../../components/views/index';
+import { Container, ContentWrapper } from '../../components/views/index';
 import { FontColors } from '../../_website/layout/colors';
 
 const JumbotronWrapper = styled.section`
@@ -19,9 +19,8 @@ const JumbotronContainer = styled(Container)`
   padding: 2px 20px;
 `;
 
-const TextBorder = styled.div`
+const TextBorderJumbo = styled(ContentWrapper)`
   border-left: 2px solid yellow;
-  padding: 0 20px;
 `;
 
 const JumbotronTitle = styled.h1`
@@ -43,10 +42,17 @@ const Jumbotron = ({backgroundImage, backgroundPosition, boxShadow, className})=
   return (
     <JumbotronWrapper backgroundImage={backgroundImage} backgroundPosition={backgroundPosition} boxShadow={boxShadow} className={className} >
       <JumbotronContainer>
+<<<<<<< Updated upstream
       <TextBorder>
           <JumbotronTitle>A long time ago</JumbotronTitle>
           <JumbotronText>in a galaxy far, far away....</JumbotronText>
         </TextBorder>
+=======
+        <TextBorderJumbo padding="0 20px" backgroundColor="none" >
+          <JumbotronTitle>{text.JUMBO_TITLE}</JumbotronTitle>
+          <JumbotronText>{text.JUMBO_SUBTITLE}</JumbotronText>
+        </TextBorderJumbo>
+>>>>>>> Stashed changes
       </JumbotronContainer>
     </JumbotronWrapper>
   )
