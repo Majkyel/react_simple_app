@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexContainer, Button, SectionWrapper, ContentWrapper } from '../../components/views/index';
 import Falcon from '../../_website/images/firstSFalcon.jpg';
-import { Link } from 'react-router-dom';
 import text from '../../_website/texts/texts.json';
+import { Link } from 'react-router-dom';
 
-const ContentContainer = styled.div`
+
+const Content = styled.div`
   position: relative;
   top: 40%;
   transform: translateY(-50%);
@@ -16,7 +17,6 @@ const Text = styled.p`
   letter-spacing: 1px;
   color: white;
   margin: 3rem 0;
-  font-style: italic;
 `;
 
 const FirstSectionFlexContainer = styled(FlexContainer)`
@@ -24,21 +24,22 @@ const FirstSectionFlexContainer = styled(FlexContainer)`
   border-bottom: 1px solid yellow;
 `;
 
+
 const HomePowerSection = ({ className })=> {
   return (
     <SectionWrapper className={className}>
       <FirstSectionFlexContainer>
         <ContentWrapper
           maxWidth="50%"
-          padding="20px"
+          padding="40px"
           contentAlign="center"
           >
-          <ContentContainer>
+          <Content>
             <Text>{text.ENERGY_SECTION_TEXT}</Text>
-            <Link to='/energy'>
-              <Button position="center">ENERGY</Button>
+            <Link to='/power'>
+              <Button position="center" border="2px solid white">POWER</Button>
             </Link>
-          </ContentContainer>
+          </Content>
         </ContentWrapper>
         <ContentWrapper
           maxWidth="50%"
@@ -52,3 +53,4 @@ const HomePowerSection = ({ className })=> {
 }
 
 export { HomePowerSection }
+

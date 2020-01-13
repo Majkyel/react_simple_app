@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FlexContainer, Logo, Navbar } from '../../components/views/index';
 import { BackgroundColors } from '../../_website/layout/colors';
@@ -16,9 +17,9 @@ const Header = ()=> {
     return (
       <HeaderSection>
         <FlexContainer>
-            <LogoWrapper href="/" >
+            <Link to="/" >
               <Logo src={logo} />
-            </LogoWrapper>
+            </Link>
             <Navbar />
         </FlexContainer>
       </HeaderSection>
