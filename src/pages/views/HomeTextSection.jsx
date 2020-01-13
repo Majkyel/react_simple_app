@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { FlexContainer, SectionWrapper, ContentWrapper } from '../../components/views/index';
 import text from '../../_website/texts/texts.json';
 
+const Text = styled.p``;
+
 const HomeTextSection = ({className})=> {
   return (
     <SectionWrapper padding="0" className={className}>

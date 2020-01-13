@@ -8,9 +8,9 @@ const HeaderSection = styled.header`
   width: 100%;
   height: 100px;
   background-color: ${ BackgroundColors.DARK };
-`
+`;
 
-const LogoWrapper = styled.a``
+const LogoWrapper = styled.a``;
 
 const Header = ()=> {
     return (

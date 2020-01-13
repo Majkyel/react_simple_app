@@ -5,11 +5,11 @@ import { BackgroundColors, FontColors } from '../../_website/layout/colors';
 
 const FooterWrapper = styled.footer`
   background-color: ${ BackgroundColors.DARK };
-`
+`;
 
 const FooterText = styled.p`
   color: ${ FontColors.LIGHT };
-`
+`;
 
 const Footer = ()=> {
   return (

@@ -9,7 +9,7 @@ const ContentContainer = styled.div`
   position: relative;
   top: 40%;
   transform: translateY(-50%);
-`
+`;
 
 const Text = styled.p`
   font-size: 1.3rem;
@@ -22,9 +22,9 @@ const Text = styled.p`
 const FirstSectionFlexContainer = styled(FlexContainer)`
   border-top: 1px solid yellow;
   border-bottom: 1px solid yellow;
-`
+`;
 
-const HomeEnergySection = ({ className })=> {
+const HomePowerSection = ({ className })=> {
   return (
     <SectionWrapper className={className}>
       <FirstSectionFlexContainer>
@@ -51,4 +51,4 @@ const HomeEnergySection = ({ className })=> {
   )
 }
 
-export { HomeEnergySection }
+export { HomePowerSection }
