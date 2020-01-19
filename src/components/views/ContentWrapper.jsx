@@ -13,7 +13,7 @@ const  Wrapper = styled.div`
   box-shadow: ${props => props.boxShadow ? props.boxShadow : null };
 `;
 
-const ContentWrapper = ({className, children, maxWidth, padding, contentAlign, backgroundIMG, backgroundPOS, boxShadow})=> {
+const ContentWrapper = ({className, children, maxWidth, padding, contentAlign, backgroundIMG, backgroundPOS, boxShadow, minHeight})=> {
   return (
     <Wrapper
       className={className}
@@ -23,6 +23,7 @@ const ContentWrapper = ({className, children, maxWidth, padding, contentAlign, b
       contentAlign={contentAlign}
       backgroundIMG={backgroundIMG}
       backgroundPOS={backgroundPOS}
+      minHeight={minHeight}
     >
       {children}
     </Wrapper>
