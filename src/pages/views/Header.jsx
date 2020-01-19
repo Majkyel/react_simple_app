@@ -11,8 +11,6 @@ const HeaderSection = styled.header`
   background-color: ${ BackgroundColors.DARK };
 `;
 
-const LogoWrapper = styled.a``;
-
 const Header = ()=> {
     return (
       <HeaderSection>
