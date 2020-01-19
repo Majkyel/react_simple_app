@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, ContentWrapper } from '../../components/views/index';
-import { FontColors } from '../../_website/layout/colors';
+import { FontColors, WebsiteColors } from '../../_website/layout/colors';
 import text from '../../_website/texts/texts.json';
 
 const JumbotronWrapper = styled.section`
@@ -21,7 +21,7 @@ const JumbotronContainer = styled(Container)`
 `;
 
 const TextBorderJumbo = styled(ContentWrapper)`
-  border-left: 2px solid yellow;
+  border-left: 2px solid ${WebsiteColors.YELLOW};
 `;
 
 const JumbotronTitle = styled.h1`

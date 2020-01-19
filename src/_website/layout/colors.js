@@ -13,7 +13,13 @@ const BackgroundColors = {
 
 const FontColors = {
   DARK: '#000',
-  LIGHT: '#FFF'
+  LIGHT: '#FFF',
+  YELLOW: '#ffff00'
 }
 
-export { ButtonColors, BackgroundColors, FontColors }
+const WebsiteColors = {
+  YELLOW: '#ffff00',
+  BLACK: '#000'
+}
+
+export { ButtonColors, BackgroundColors, FontColors, WebsiteColors }

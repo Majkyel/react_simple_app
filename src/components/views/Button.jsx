@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ButtonColors } from '../../_website/layout/colors';
+import { ButtonColors, FontColors, WebsiteColors } from '../../_website/layout/colors';
 
 const ButtonWrapper = styled.div`
   position: relative;
@@ -10,11 +10,11 @@ const ButtonWrapper = styled.div`
 
 const ButtonElement = styled.button`
   padding: .8rem 1.5rem;
-  color: white;
+  color: ${FontColors.LIGHT};
   border: ${props=> props.border? props.border : 'none' };
   outline: none;
   letter-spacing: 1px;
-  text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 2px ${WebsiteColors.BLACK};
   border-radius: 13px;
   font-size: 1rem;
   font-weight: 600;
